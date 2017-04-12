@@ -23,8 +23,41 @@
 		4935E3DB1E9E22CD00330982 /* UIEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CD1E9E22CD00330982 /* UIEventBus.swift */; };
 		4935E3DC1E9E22CD00330982 /* UIEventBusEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CF1E9E22CD00330982 /* UIEventBusEvent.swift */; };
 		4935E3DD1E9E22CD00330982 /* PrefrencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3D11E9E22CD00330982 /* PrefrencesStorage.swift */; };
-		4935E3DE1E9E22CD00330982 /* StorageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3D21E9E22CD00330982 /* StorageConfig.swift */; };
+		4935E3EE1E9E2D1900330982 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3ED1E9E2D1900330982 /* StorageTests.swift */; };
+		4935E3EF1E9E2E3100330982 /* PrefrencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3D11E9E22CD00330982 /* PrefrencesStorage.swift */; };
+		4935E3F21E9E45DF00330982 /* EventBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3F11E9E45DF00330982 /* EventBusTests.swift */; };
+		4935E3F31E9E46F700330982 /* BGEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3C41E9E22CD00330982 /* BGEventBus.swift */; };
+		4935E3F41E9E46FA00330982 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CA1E9E22CD00330982 /* EventBus.swift */; };
+		4935E3F51E9E46FC00330982 /* PubSubEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CB1E9E22CD00330982 /* PubSubEvent.swift */; };
+		4935E3F61E9E46FE00330982 /* PubSubSubscriberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CC1E9E22CD00330982 /* PubSubSubscriberProtocol.swift */; };
+		4935E3F71E9E470000330982 /* UIEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CD1E9E22CD00330982 /* UIEventBus.swift */; };
+		4935E3F81E9E470400330982 /* UIEventBusEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CF1E9E22CD00330982 /* UIEventBusEvent.swift */; };
+		4935E3F91E9E470700330982 /* BGEventBusEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3C91E9E22CD00330982 /* BGEventBusEvent.swift */; };
+		4935E4041E9E492900330982 /* String+Classname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3FC1E9E492900330982 /* String+Classname.swift */; };
+		4935E4051E9E492900330982 /* String+Classname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3FC1E9E492900330982 /* String+Classname.swift */; };
+		4935E4061E9E492900330982 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3FD1E9E492900330982 /* String+Substring.swift */; };
+		4935E4071E9E492900330982 /* String+Substring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3FD1E9E492900330982 /* String+Substring.swift */; };
+		4935E4081E9E492900330982 /* String+Xor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3FE1E9E492900330982 /* String+Xor.swift */; };
+		4935E4091E9E492900330982 /* String+Xor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3FE1E9E492900330982 /* String+Xor.swift */; };
+		4935E40C1E9E492900330982 /* ViewAnimationsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4021E9E492900330982 /* ViewAnimationsUtils.swift */; };
+		4935E40D1E9E492900330982 /* ViewAnimationsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4021E9E492900330982 /* ViewAnimationsUtils.swift */; };
+		4935E40E1E9E492900330982 /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4031E9E492900330982 /* ViewHelpers.swift */; };
+		4935E40F1E9E492900330982 /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4031E9E492900330982 /* ViewHelpers.swift */; };
+		4935E4131E9E5C3600330982 /* UtilsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4121E9E5C3600330982 /* UtilsTest.swift */; };
+		4935E4191E9E605400330982 /* PKeyboardHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4151E9E605400330982 /* PKeyboardHandlers.swift */; };
+		4935E41A1E9E605400330982 /* PStoryboardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4161E9E605400330982 /* PStoryboardHelpers.swift */; };
+		4935E41B1E9E605400330982 /* PTableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4171E9E605400330982 /* PTableHelpers.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4935E3E81E9E2CC900330982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4935E3A11E9E21C600330982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4935E3A81E9E21C600330982;
+			remoteInfo = CHICore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4935E3A91E9E21C600330982 /* CHICore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHICore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,11 +78,30 @@
 		4935E3CD1E9E22CD00330982 /* UIEventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEventBus.swift; sourceTree = "<group>"; };
 		4935E3CF1E9E22CD00330982 /* UIEventBusEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEventBusEvent.swift; sourceTree = "<group>"; };
 		4935E3D11E9E22CD00330982 /* PrefrencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefrencesStorage.swift; sourceTree = "<group>"; };
-		4935E3D21E9E22CD00330982 /* StorageConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageConfig.swift; sourceTree = "<group>"; };
+		4935E3E31E9E2CC900330982 /* CHICoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CHICoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4935E3E71E9E2CC900330982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4935E3ED1E9E2D1900330982 /* StorageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
+		4935E3F11E9E45DF00330982 /* EventBusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBusTests.swift; sourceTree = "<group>"; };
+		4935E3FC1E9E492900330982 /* String+Classname.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Classname.swift"; sourceTree = "<group>"; };
+		4935E3FD1E9E492900330982 /* String+Substring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Substring.swift"; sourceTree = "<group>"; };
+		4935E3FE1E9E492900330982 /* String+Xor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Xor.swift"; sourceTree = "<group>"; };
+		4935E4021E9E492900330982 /* ViewAnimationsUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAnimationsUtils.swift; sourceTree = "<group>"; };
+		4935E4031E9E492900330982 /* ViewHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
+		4935E4121E9E5C3600330982 /* UtilsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTest.swift; sourceTree = "<group>"; };
+		4935E4151E9E605400330982 /* PKeyboardHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKeyboardHandlers.swift; sourceTree = "<group>"; };
+		4935E4161E9E605400330982 /* PStoryboardHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryboardHelpers.swift; sourceTree = "<group>"; };
+		4935E4171E9E605400330982 /* PTableHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTableHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4935E3A61E9E21C600330982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4935E3E01E9E2CC900330982 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4935E3AB1E9E21C600330982 /* CHICore */,
+				4935E3E41E9E2CC900330982 /* CHICoreTests */,
 				4935E3AA1E9E21C600330982 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				4935E3A91E9E21C600330982 /* CHICore.app */,
+				4935E3E31E9E2CC900330982 /* CHICoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +146,8 @@
 		4935E3C01E9E22CD00330982 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4935E4141E9E605400330982 /* Helpers */,
+				4935E3FA1E9E492900330982 /* Utils */,
 				4935E3C11E9E22CD00330982 /* BackgroundService */,
 				4935E3C31E9E22CD00330982 /* EventBus */,
 				4935E3D01E9E22CD00330982 /* Storage */,
@@ -151,9 +207,57 @@
 			isa = PBXGroup;
 			children = (
 				4935E3D11E9E22CD00330982 /* PrefrencesStorage.swift */,
-				4935E3D21E9E22CD00330982 /* StorageConfig.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		4935E3E41E9E2CC900330982 /* CHICoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				4935E4121E9E5C3600330982 /* UtilsTest.swift */,
+				4935E3E71E9E2CC900330982 /* Info.plist */,
+				4935E3ED1E9E2D1900330982 /* StorageTests.swift */,
+				4935E3F11E9E45DF00330982 /* EventBusTests.swift */,
+			);
+			path = CHICoreTests;
+			sourceTree = "<group>";
+		};
+		4935E3FA1E9E492900330982 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3FB1E9E492900330982 /* String */,
+				4935E4011E9E492900330982 /* View */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4935E3FB1E9E492900330982 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3FC1E9E492900330982 /* String+Classname.swift */,
+				4935E3FD1E9E492900330982 /* String+Substring.swift */,
+				4935E3FE1E9E492900330982 /* String+Xor.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		4935E4011E9E492900330982 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4935E4021E9E492900330982 /* ViewAnimationsUtils.swift */,
+				4935E4031E9E492900330982 /* ViewHelpers.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4935E4141E9E605400330982 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4935E4151E9E605400330982 /* PKeyboardHandlers.swift */,
+				4935E4161E9E605400330982 /* PStoryboardHelpers.swift */,
+				4935E4171E9E605400330982 /* PTableHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +280,24 @@
 			productReference = 4935E3A91E9E21C600330982 /* CHICore.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4935E3E21E9E2CC900330982 /* CHICoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4935E3EA1E9E2CC900330982 /* Build configuration list for PBXNativeTarget "CHICoreTests" */;
+			buildPhases = (
+				4935E3DF1E9E2CC900330982 /* Sources */,
+				4935E3E01E9E2CC900330982 /* Frameworks */,
+				4935E3E11E9E2CC900330982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4935E3E91E9E2CC900330982 /* PBXTargetDependency */,
+			);
+			name = CHICoreTests;
+			productName = CHICoreTests;
+			productReference = 4935E3E31E9E2CC900330982 /* CHICoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,6 +312,12 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = 4J5NY3YD66;
 						ProvisioningStyle = Automatic;
+					};
+					4935E3E21E9E2CC900330982 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 4J5NY3YD66;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4935E3A81E9E21C600330982;
 					};
 				};
 			};
@@ -207,6 +335,7 @@
 			projectRoot = "";
 			targets = (
 				4935E3A81E9E21C600330982 /* CHICore */,
+				4935E3E21E9E2CC900330982 /* CHICoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +351,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4935E3E11E9E2CC900330982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,21 +368,59 @@
 				4935E3DD1E9E22CD00330982 /* PrefrencesStorage.swift in Sources */,
 				4935E3D91E9E22CD00330982 /* PubSubEvent.swift in Sources */,
 				4935E3D51E9E22CD00330982 /* BGApplicationDidBecomeActiveEvent.swift in Sources */,
+				4935E41A1E9E605400330982 /* PStoryboardHelpers.swift in Sources */,
 				4935E3D61E9E22CD00330982 /* BGApplicationDidEnterBackgroundEvent.swift in Sources */,
 				4935E3D41E9E22CD00330982 /* BGEventBus.swift in Sources */,
-				4935E3DE1E9E22CD00330982 /* StorageConfig.swift in Sources */,
+				4935E4191E9E605400330982 /* PKeyboardHandlers.swift in Sources */,
 				4935E3D31E9E22CD00330982 /* BackgroundService.swift in Sources */,
+				4935E4081E9E492900330982 /* String+Xor.swift in Sources */,
 				4935E3D71E9E22CD00330982 /* BGEventBusEvent.swift in Sources */,
 				4935E3D81E9E22CD00330982 /* EventBus.swift in Sources */,
+				4935E41B1E9E605400330982 /* PTableHelpers.swift in Sources */,
+				4935E4041E9E492900330982 /* String+Classname.swift in Sources */,
+				4935E40E1E9E492900330982 /* ViewHelpers.swift in Sources */,
 				4935E3DB1E9E22CD00330982 /* UIEventBus.swift in Sources */,
 				4935E3DC1E9E22CD00330982 /* UIEventBusEvent.swift in Sources */,
 				4935E3AF1E9E21C600330982 /* ViewController.swift in Sources */,
 				4935E3DA1E9E22CD00330982 /* PubSubSubscriberProtocol.swift in Sources */,
+				4935E40C1E9E492900330982 /* ViewAnimationsUtils.swift in Sources */,
+				4935E4061E9E492900330982 /* String+Substring.swift in Sources */,
 				4935E3AD1E9E21C600330982 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4935E3DF1E9E2CC900330982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4935E3F31E9E46F700330982 /* BGEventBus.swift in Sources */,
+				4935E3F91E9E470700330982 /* BGEventBusEvent.swift in Sources */,
+				4935E3F41E9E46FA00330982 /* EventBus.swift in Sources */,
+				4935E3F81E9E470400330982 /* UIEventBusEvent.swift in Sources */,
+				4935E4071E9E492900330982 /* String+Substring.swift in Sources */,
+				4935E3F21E9E45DF00330982 /* EventBusTests.swift in Sources */,
+				4935E4051E9E492900330982 /* String+Classname.swift in Sources */,
+				4935E3F51E9E46FC00330982 /* PubSubEvent.swift in Sources */,
+				4935E3EF1E9E2E3100330982 /* PrefrencesStorage.swift in Sources */,
+				4935E40F1E9E492900330982 /* ViewHelpers.swift in Sources */,
+				4935E3F71E9E470000330982 /* UIEventBus.swift in Sources */,
+				4935E4131E9E5C3600330982 /* UtilsTest.swift in Sources */,
+				4935E4091E9E492900330982 /* String+Xor.swift in Sources */,
+				4935E40D1E9E492900330982 /* ViewAnimationsUtils.swift in Sources */,
+				4935E3EE1E9E2D1900330982 /* StorageTests.swift in Sources */,
+				4935E3F61E9E46FE00330982 /* PubSubSubscriberProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4935E3E91E9E2CC900330982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4935E3A81E9E21C600330982 /* CHICore */;
+			targetProxy = 4935E3E81E9E2CC900330982 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4935E3B01E9E21C600330982 /* Main.storyboard */ = {
@@ -387,6 +561,34 @@
 			};
 			name = Release;
 		};
+		4935E3EB1E9E2CC900330982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4J5NY3YD66;
+				INFOPLIST_FILE = CHICoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lv.chi.CHICoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHICore.app/CHICore";
+			};
+			name = Debug;
+		};
+		4935E3EC1E9E2CC900330982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4J5NY3YD66;
+				INFOPLIST_FILE = CHICoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lv.chi.CHICoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CHICore.app/CHICore";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +606,14 @@
 			buildConfigurations = (
 				4935E3BC1E9E21C600330982 /* Debug */,
 				4935E3BD1E9E21C600330982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4935E3EA1E9E2CC900330982 /* Build configuration list for PBXNativeTarget "CHICoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4935E3EB1E9E2CC900330982 /* Debug */,
+				4935E3EC1E9E2CC900330982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

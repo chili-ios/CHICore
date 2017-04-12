@@ -17,9 +17,9 @@ class EventBus: PEventBus {
         self.queue = queue
     }
 
-    func send(event: Any) {
+    func send(event: AnyObject) {
         self.queue.addOperation {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue:String(describing: event)), object: event)
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue:String.className(event)), object: event)
         }
     }
 
