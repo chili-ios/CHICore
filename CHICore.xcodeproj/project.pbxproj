@@ -12,6 +12,18 @@
 		4935E3B21E9E21C600330982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4935E3B01E9E21C600330982 /* Main.storyboard */; };
 		4935E3B41E9E21C600330982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4935E3B31E9E21C600330982 /* Assets.xcassets */; };
 		4935E3B71E9E21C600330982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4935E3B51E9E21C600330982 /* LaunchScreen.storyboard */; };
+		4935E3D31E9E22CD00330982 /* BackgroundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3C21E9E22CD00330982 /* BackgroundService.swift */; };
+		4935E3D41E9E22CD00330982 /* BGEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3C41E9E22CD00330982 /* BGEventBus.swift */; };
+		4935E3D51E9E22CD00330982 /* BGApplicationDidBecomeActiveEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3C71E9E22CD00330982 /* BGApplicationDidBecomeActiveEvent.swift */; };
+		4935E3D61E9E22CD00330982 /* BGApplicationDidEnterBackgroundEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3C81E9E22CD00330982 /* BGApplicationDidEnterBackgroundEvent.swift */; };
+		4935E3D71E9E22CD00330982 /* BGEventBusEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3C91E9E22CD00330982 /* BGEventBusEvent.swift */; };
+		4935E3D81E9E22CD00330982 /* EventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CA1E9E22CD00330982 /* EventBus.swift */; };
+		4935E3D91E9E22CD00330982 /* PubSubEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CB1E9E22CD00330982 /* PubSubEvent.swift */; };
+		4935E3DA1E9E22CD00330982 /* PubSubSubscriberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CC1E9E22CD00330982 /* PubSubSubscriberProtocol.swift */; };
+		4935E3DB1E9E22CD00330982 /* UIEventBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CD1E9E22CD00330982 /* UIEventBus.swift */; };
+		4935E3DC1E9E22CD00330982 /* UIEventBusEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3CF1E9E22CD00330982 /* UIEventBusEvent.swift */; };
+		4935E3DD1E9E22CD00330982 /* PrefrencesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3D11E9E22CD00330982 /* PrefrencesStorage.swift */; };
+		4935E3DE1E9E22CD00330982 /* StorageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E3D21E9E22CD00330982 /* StorageConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +34,18 @@
 		4935E3B31E9E21C600330982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4935E3B61E9E21C600330982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4935E3B81E9E21C600330982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4935E3C21E9E22CD00330982 /* BackgroundService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundService.swift; sourceTree = "<group>"; };
+		4935E3C41E9E22CD00330982 /* BGEventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGEventBus.swift; sourceTree = "<group>"; };
+		4935E3C71E9E22CD00330982 /* BGApplicationDidBecomeActiveEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGApplicationDidBecomeActiveEvent.swift; sourceTree = "<group>"; };
+		4935E3C81E9E22CD00330982 /* BGApplicationDidEnterBackgroundEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGApplicationDidEnterBackgroundEvent.swift; sourceTree = "<group>"; };
+		4935E3C91E9E22CD00330982 /* BGEventBusEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGEventBusEvent.swift; sourceTree = "<group>"; };
+		4935E3CA1E9E22CD00330982 /* EventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBus.swift; sourceTree = "<group>"; };
+		4935E3CB1E9E22CD00330982 /* PubSubEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubSubEvent.swift; sourceTree = "<group>"; };
+		4935E3CC1E9E22CD00330982 /* PubSubSubscriberProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubSubSubscriberProtocol.swift; sourceTree = "<group>"; };
+		4935E3CD1E9E22CD00330982 /* UIEventBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEventBus.swift; sourceTree = "<group>"; };
+		4935E3CF1E9E22CD00330982 /* UIEventBusEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEventBusEvent.swift; sourceTree = "<group>"; };
+		4935E3D11E9E22CD00330982 /* PrefrencesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefrencesStorage.swift; sourceTree = "<group>"; };
+		4935E3D21E9E22CD00330982 /* StorageConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 		4935E3AB1E9E21C600330982 /* CHICore */ = {
 			isa = PBXGroup;
 			children = (
+				4935E3C01E9E22CD00330982 /* Classes */,
 				4935E3AC1E9E21C600330982 /* AppDelegate.swift */,
 				4935E3AE1E9E21C600330982 /* ViewController.swift */,
 				4935E3B01E9E21C600330982 /* Main.storyboard */,
@@ -62,6 +87,73 @@
 				4935E3B81E9E21C600330982 /* Info.plist */,
 			);
 			path = CHICore;
+			sourceTree = "<group>";
+		};
+		4935E3C01E9E22CD00330982 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3C11E9E22CD00330982 /* BackgroundService */,
+				4935E3C31E9E22CD00330982 /* EventBus */,
+				4935E3D01E9E22CD00330982 /* Storage */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4935E3C11E9E22CD00330982 /* BackgroundService */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3C21E9E22CD00330982 /* BackgroundService.swift */,
+			);
+			path = BackgroundService;
+			sourceTree = "<group>";
+		};
+		4935E3C31E9E22CD00330982 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3C41E9E22CD00330982 /* BGEventBus.swift */,
+				4935E3C51E9E22CD00330982 /* BGEvents */,
+				4935E3CA1E9E22CD00330982 /* EventBus.swift */,
+				4935E3CB1E9E22CD00330982 /* PubSubEvent.swift */,
+				4935E3CC1E9E22CD00330982 /* PubSubSubscriberProtocol.swift */,
+				4935E3CD1E9E22CD00330982 /* UIEventBus.swift */,
+				4935E3CE1E9E22CD00330982 /* UIEvents */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
+		4935E3C51E9E22CD00330982 /* BGEvents */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3C61E9E22CD00330982 /* App */,
+				4935E3C91E9E22CD00330982 /* BGEventBusEvent.swift */,
+			);
+			path = BGEvents;
+			sourceTree = "<group>";
+		};
+		4935E3C61E9E22CD00330982 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3C71E9E22CD00330982 /* BGApplicationDidBecomeActiveEvent.swift */,
+				4935E3C81E9E22CD00330982 /* BGApplicationDidEnterBackgroundEvent.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4935E3CE1E9E22CD00330982 /* UIEvents */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3CF1E9E22CD00330982 /* UIEventBusEvent.swift */,
+			);
+			path = UIEvents;
+			sourceTree = "<group>";
+		};
+		4935E3D01E9E22CD00330982 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				4935E3D11E9E22CD00330982 /* PrefrencesStorage.swift */,
+				4935E3D21E9E22CD00330982 /* StorageConfig.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +229,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4935E3DD1E9E22CD00330982 /* PrefrencesStorage.swift in Sources */,
+				4935E3D91E9E22CD00330982 /* PubSubEvent.swift in Sources */,
+				4935E3D51E9E22CD00330982 /* BGApplicationDidBecomeActiveEvent.swift in Sources */,
+				4935E3D61E9E22CD00330982 /* BGApplicationDidEnterBackgroundEvent.swift in Sources */,
+				4935E3D41E9E22CD00330982 /* BGEventBus.swift in Sources */,
+				4935E3DE1E9E22CD00330982 /* StorageConfig.swift in Sources */,
+				4935E3D31E9E22CD00330982 /* BackgroundService.swift in Sources */,
+				4935E3D71E9E22CD00330982 /* BGEventBusEvent.swift in Sources */,
+				4935E3D81E9E22CD00330982 /* EventBus.swift in Sources */,
+				4935E3DB1E9E22CD00330982 /* UIEventBus.swift in Sources */,
+				4935E3DC1E9E22CD00330982 /* UIEventBusEvent.swift in Sources */,
 				4935E3AF1E9E21C600330982 /* ViewController.swift in Sources */,
+				4935E3DA1E9E22CD00330982 /* PubSubSubscriberProtocol.swift in Sources */,
 				4935E3AD1E9E21C600330982 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
