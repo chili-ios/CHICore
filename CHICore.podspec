@@ -6,10 +6,10 @@ s.summary          = 'CHICore is a set of helpers and services for a project in 
 s.ios.deployment_target = '8.0'
 s.tvos.deployment_target = '9.0'
 
-s.homepage         = 'https://github.com/ChiliLabs/CHICore'
+s.homepage         = 'https://github.com/chili-ios/CHICore'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'Chili' => 'studio@chi.lv' }
-s.source           = { :git => 'https://github.com/ChiliLabs/CHICore.git', :tag => s.version.to_s }
+s.source           = { :git => 'https://github.com/chili-ios/CHICore.git', :tag => s.version.to_s }
 
 s.source_files = 'CHICore/Classes/**/*.swift'
 
