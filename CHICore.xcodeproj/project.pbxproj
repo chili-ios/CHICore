@@ -47,6 +47,7 @@
 		4935E4191E9E605400330982 /* PKeyboardHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4151E9E605400330982 /* PKeyboardHandlers.swift */; };
 		4935E41A1E9E605400330982 /* PStoryboardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4161E9E605400330982 /* PStoryboardHelpers.swift */; };
 		4935E41B1E9E605400330982 /* PTableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935E4171E9E605400330982 /* PTableHelpers.swift */; };
+		4935E41E1E9E69F200330982 /* CHICore.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4935E41D1E9E69F200330982 /* CHICore.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		4935E4151E9E605400330982 /* PKeyboardHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKeyboardHandlers.swift; sourceTree = "<group>"; };
 		4935E4161E9E605400330982 /* PStoryboardHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PStoryboardHelpers.swift; sourceTree = "<group>"; };
 		4935E4171E9E605400330982 /* PTableHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTableHelpers.swift; sourceTree = "<group>"; };
+		4935E41D1E9E69F200330982 /* CHICore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHICore.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		4935E3A01E9E21C600330982 = {
 			isa = PBXGroup;
 			children = (
+				4935E41D1E9E69F200330982 /* CHICore.podspec */,
 				4935E3AB1E9E21C600330982 /* CHICore */,
 				4935E3E41E9E2CC900330982 /* CHICoreTests */,
 				4935E3AA1E9E21C600330982 /* Products */,
@@ -345,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4935E41E1E9E69F200330982 /* CHICore.podspec in Resources */,
 				4935E3B71E9E21C600330982 /* LaunchScreen.storyboard in Resources */,
 				4935E3B41E9E21C600330982 /* Assets.xcassets in Resources */,
 				4935E3B21E9E21C600330982 /* Main.storyboard in Resources */,
