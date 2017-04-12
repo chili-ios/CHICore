@@ -6,5 +6,5 @@
 import Foundation
 
 public class BGApplicationDidEnterBackgroundEvent: BGEventBusEvent {
-
+    public override init() {}
 }

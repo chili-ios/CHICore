@@ -7,6 +7,8 @@ import Foundation
 
 public class BGEventBusEvent: PubSubEvent {
 
+    public init() {}
+    
     public class func eventName() -> String {
         return String(describing: self)
     }

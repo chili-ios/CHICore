@@ -36,9 +36,7 @@ public class EventBusObserver {
 
     var objectProtocol: NSObjectProtocol?
     
-    public init() {
-        
-    }
+    public init() { }
 
     open func addObserver(forName name: NSNotification.Name?, object obj: Any?, queue: OperationQueue?, using block: @escaping (Notification) -> Swift.Void) {
         self.objectProtocol = NotificationCenter.default.addObserver(forName: name, object: obj, queue: queue, using: block)

@@ -7,6 +7,8 @@ import Foundation
 
 public class UIEventBusEvent: PubSubEvent {
 
+    public init() {}
+    
     public class func eventName() -> String {
         return String(describing: self)
     }

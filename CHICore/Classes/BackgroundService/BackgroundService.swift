@@ -16,7 +16,7 @@ public class BackgroundService: PBackgroundService {
     private(set) open var inBackground: Bool = false
     private(set) open var bgDate: NSDate?
 
-    init() {
+    public init() {
         registerForEvents()
     }
 
