@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol StoryboardIdentifiable {
+public protocol StoryboardIdentifiable {
     static var storyboardIdentifier: String { get }
 }
 
@@ -18,7 +18,7 @@ extension StoryboardIdentifiable where Self: UIViewController {
     }
 }
 
-protocol PStoryBoard {
+public protocol PStoryBoard {
     func name() -> String
 }
 
@@ -28,7 +28,7 @@ extension UIStoryboard {
         self.init(name: storyboard.name(), bundle: bundle)
     }
 
-    func instantiateViewController<T: UIViewController>() -> T {
+    public func instantiateViewController<T: UIViewController>() -> T {
         let storyBoardId = String(describing: T.self)
         let optionalViewController = self.instantiateViewController(withIdentifier: storyBoardId)
 
@@ -39,7 +39,7 @@ extension UIStoryboard {
         return viewController
     }
 
-    func instantiateInitialViewController<T: UIViewController>() -> T {
+    public func instantiateInitialViewController<T: UIViewController>() -> T {
         let optionalViewController = self.instantiateInitialViewController()
         guard let viewController = optionalViewController as? T  else {
             fatalError("Couldn’t instantiate initial view controller")

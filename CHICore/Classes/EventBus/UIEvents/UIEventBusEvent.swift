@@ -5,13 +5,13 @@
 
 import Foundation
 
-class UIEventBusEvent: PubSubEvent {
+public class UIEventBusEvent: PubSubEvent {
 
-    class func eventName() -> String {
+    public class func eventName() -> String {
         return String(describing: self)
     }
 
-    open func send() {
+    public func send() {
         UIEventBus.sharedInstance.send(event:self)
     }
 

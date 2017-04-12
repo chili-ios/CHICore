@@ -5,6 +5,6 @@
 
 import Foundation
 
-class BGApplicationDidEnterBackgroundEvent: BGEventBusEvent {
+public class BGApplicationDidEnterBackgroundEvent: BGEventBusEvent {
 
 }

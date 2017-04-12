@@ -5,15 +5,15 @@
 
 import Foundation
 
-protocol PrefrenceStorable {
+public protocol PrefrenceStorable {
 }
-protocol PPrefrencesStorage {
+public protocol PPrefrencesStorage {
     func remove(key: String)
     func store(_ value: PrefrenceStorable, key: String)
     func restore<T>(key: String) -> T? where T: PrefrenceStorable
 }
 
-class PrefrencesStorage: PPrefrencesStorage {
+public class PrefrencesStorage: PPrefrencesStorage {
     private let defaults = UserDefaults(suiteName: "group."+Bundle.main.bundleIdentifier!)
 
     open func remove(key: String) {

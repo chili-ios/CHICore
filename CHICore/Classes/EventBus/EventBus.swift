@@ -5,11 +5,11 @@
 
 import Foundation
 
-protocol PEventBus {
+public protocol PEventBus {
     var queue: OperationQueue { get }
 }
 
-class EventBus: PEventBus {
+public class EventBus: PEventBus {
 
     private(set) open var queue: OperationQueue
 
@@ -17,13 +17,13 @@ class EventBus: PEventBus {
         self.queue = queue
     }
 
-    func send(event: AnyObject) {
+    public func send(event: AnyObject) {
         self.queue.addOperation {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue:String.className(event)), object: event)
         }
     }
 
-    open func handleEvent<T: PubSubEvent>(target: EventBusObservable, handleBlock: @escaping ((T) -> Swift.Void)) {
+    public func handleEvent<T: PubSubEvent>(target: EventBusObservable, handleBlock: @escaping ((T) -> Swift.Void)) {
         let notificationName = NSNotification.Name(rawValue: T.eventName())
         _ = target.eventBusObserver.addObserver(forName: notificationName, object: nil, queue: self.queue) { (notification) in
             handleBlock((notification.object as! T))
@@ -32,7 +32,7 @@ class EventBus: PEventBus {
 
 }
 
-class EventBusObserver {
+public class EventBusObserver {
 
     var objectProtocol: NSObjectProtocol?
 
@@ -48,7 +48,7 @@ class EventBusObserver {
     }
 }
 
-protocol EventBusObservable {
+public protocol EventBusObservable {
     var eventBusObserver: EventBusObserver { get set }
     func handleBGEvent<T>(handleBlock: @escaping ((T) -> Swift.Void)) where T : BGEventBusEvent
     func handleUIEvent<T>(handleBlock: @escaping ((T) -> Swift.Void)) where T : UIEventBusEvent

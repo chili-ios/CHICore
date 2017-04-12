@@ -5,7 +5,7 @@
 
 import Foundation
 
-class BGApplicationDidBecomeActiveEvent: BGEventBusEvent {
+public class BGApplicationDidBecomeActiveEvent: BGEventBusEvent {
 
     open var fromBackground: Bool = false
     open var backgroundTime: TimeInterval?

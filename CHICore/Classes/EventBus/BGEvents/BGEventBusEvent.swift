@@ -5,13 +5,13 @@
 
 import Foundation
 
-class BGEventBusEvent: PubSubEvent {
+public class BGEventBusEvent: PubSubEvent {
 
-    class func eventName() -> String {
+    public class func eventName() -> String {
         return String(describing: self)
     }
 
-    open func send() {
+    public func send() {
         BGEventBus.sharedInstance.send(event: self)
     }
 }

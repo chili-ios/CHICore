@@ -11,7 +11,7 @@ protocol PBackgroundService {
     var bgDate: NSDate? { get }
 }
 
-class BackgroundService: PBackgroundService {
+public class BackgroundService: PBackgroundService {
 
     private(set) open var inBackground: Bool = false
     private(set) open var bgDate: NSDate?

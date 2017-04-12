@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol PubSubEvent {
+public protocol PubSubEvent {
     static func eventName() -> String
     func send()
 }

@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 import ObjectiveC
 
-protocol PKeyboardObservable {
+public protocol PKeyboardObservable {
     var keyboardNotificationsObserver: EventBusObserver {get set}
     func onKeyboardAppear(handler:@escaping ((CGRect) -> Void))
     func onKeyboardDissappear(handler:@escaping () -> Void)
