@@ -1,0 +1,2 @@
+# CHICore
+The greatest core
