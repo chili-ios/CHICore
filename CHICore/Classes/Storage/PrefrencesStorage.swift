@@ -15,6 +15,8 @@ public protocol PPrefrencesStorage {
 
 public class PrefrencesStorage: PPrefrencesStorage {
     private let defaults = UserDefaults(suiteName: "group."+Bundle.main.bundleIdentifier!)
+    
+    public init() { }
 
     open func remove(key: String) {
         self.defaults?.removeObject(forKey: key)
