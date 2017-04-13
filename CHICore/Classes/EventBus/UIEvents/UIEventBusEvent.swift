@@ -5,7 +5,7 @@
 
 import Foundation
 
-public class UIEventBusEvent: PubSubEvent {
+open class UIEventBusEvent: PubSubEvent {
 
     public init() {}
     

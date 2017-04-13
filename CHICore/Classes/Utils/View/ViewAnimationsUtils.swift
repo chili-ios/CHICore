@@ -5,8 +5,8 @@
 
 import UIKit
 
-class ViewAnimationsUtils {
-    static func shakeView(view: UIView) {
+open class ViewAnimationsUtils {
+    public static func shakeView(view: UIView) {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.06
         animation.repeatCount = 4
@@ -18,7 +18,7 @@ class ViewAnimationsUtils {
 }
 
 extension UIView {
-    static func viewFromXib(xibName: String) -> UIView? {
+    public static func viewFromXib(xibName: String) -> UIView? {
         return UINib(nibName: xibName, bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? UIView
     }
 }

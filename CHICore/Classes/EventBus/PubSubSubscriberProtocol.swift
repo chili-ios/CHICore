@@ -5,6 +5,6 @@
 
 import Foundation
 
-protocol PubSubSubscriberProtocol {
+public protocol PubSubSubscriberProtocol {
     func registerForEvents()
 }

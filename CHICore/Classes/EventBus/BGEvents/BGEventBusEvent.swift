@@ -5,7 +5,7 @@
 
 import Foundation
 
-public class BGEventBusEvent: PubSubEvent {
+open class BGEventBusEvent: PubSubEvent {
 
     public init() {}
     

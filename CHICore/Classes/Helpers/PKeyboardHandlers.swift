@@ -14,7 +14,7 @@ public protocol PKeyboardObservable {
 }
 
 extension PKeyboardObservable where Self : UIViewController {
-    func onKeyboardAppear(handler:@escaping ((CGRect) -> Void)) {
+    public func onKeyboardAppear(handler:@escaping ((CGRect) -> Void)) {
         _ = self.keyboardNotificationsObserver.addObserver(
             forName: NSNotification.Name.UIKeyboardWillShow,
             object: nil,
@@ -26,7 +26,7 @@ extension PKeyboardObservable where Self : UIViewController {
         }
     }
 
-    func onKeyboardDissappear(handler:@escaping () -> Void) {
+    public func onKeyboardDissappear(handler:@escaping () -> Void) {
         let notificationName = NSNotification.Name.UIKeyboardWillHide
         _ = self.keyboardNotificationsObserver.addObserver(forName: notificationName, object: nil, queue: OperationQueue.main) { _ in
             handler()

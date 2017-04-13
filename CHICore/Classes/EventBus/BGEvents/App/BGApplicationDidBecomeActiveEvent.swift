@@ -9,6 +9,10 @@ public class BGApplicationDidBecomeActiveEvent: BGEventBusEvent {
 
     open var fromBackground: Bool = false
     open var backgroundTime: TimeInterval?
+    
+    public override init() {
+        super.init()
+    }
 
     public init(fromBackground: Bool) {
         self.fromBackground = fromBackground
