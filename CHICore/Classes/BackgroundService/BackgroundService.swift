@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-protocol PBackgroundService {
+public protocol PBackgroundService {
     var inBackground: Bool { get }
     var bgDate: NSDate? { get }
 }
