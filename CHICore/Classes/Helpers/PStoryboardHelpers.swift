@@ -22,7 +22,7 @@ public protocol PStoryBoard {
     func name() -> String
 }
 
-extension UIStoryboard {
+public extension UIStoryboard {
     
     convenience init(storyboard: PStoryBoard, bundle: Bundle? = nil) {
         self.init(name: storyboard.name(), bundle: bundle)
