@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     static func className(_ obj: AnyObject) -> String {
         return String(describing:obj.self).components(separatedBy: ".").last!
     }
