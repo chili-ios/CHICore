@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'CHICore'
-s.version          = '0.1.4'
+s.version          = '0.1.5'
 s.summary          = 'CHICore is a set of helpers and services for a project in CHili studio.'
 
 s.ios.deployment_target = '8.0'

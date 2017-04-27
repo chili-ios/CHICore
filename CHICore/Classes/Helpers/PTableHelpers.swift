@@ -13,7 +13,7 @@ public protocol Reusable: class {
     static var nib: UINib? { get }
 }
 
-extension Reusable {
+public extension Reusable {
     static var reuseIdentifier: String { return String(describing: Self.self) }
     static var nib: UINib? { return nil }
 }
