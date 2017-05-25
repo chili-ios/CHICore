@@ -14,6 +14,7 @@ extension UIView {
             addSubview(view)
         }
     }
+
     public static func viewFromXib<T: UIView>() -> T {
         return UINib(nibName: String.className(T.self), bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! T
     }

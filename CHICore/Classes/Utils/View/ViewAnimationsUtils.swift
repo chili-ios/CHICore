@@ -16,9 +16,3 @@ open class ViewAnimationsUtils {
         view.layer.add(animation, forKey: "position")
     }
 }
-
-extension UIView {
-    public static func viewFromXib(xibName: String) -> UIView? {
-        return UINib(nibName: xibName, bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? UIView
-    }
-}
