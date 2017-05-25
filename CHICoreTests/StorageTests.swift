@@ -70,4 +70,43 @@ class StorageTests: XCTestCase {
         storage.store(anInt, key: "int")
     }
     
+
+    func testDefaults() {
+        let key1: String = "def1",
+            val1: Bool = true,
+            key2: String = "def2",
+            val2: Int = 1
+
+        storage.registerDefaults([key1 : val1, key2: val2])
+
+        guard let defVal1: Bool = storage.restore(key: key1) else {
+            XCTFail("unable to restore default key1")
+            return
+        }
+
+        guard let defVal2: Int = storage.restore(key: key2) else {
+            XCTFail("unable to restore default key2")
+            return
+        }
+
+        XCTAssert(val1 == defVal1)
+        XCTAssert(val2 == defVal2)
+
+        storage.store(false, key: key1)
+        storage.store(2, key: key2)
+
+        guard let userVal1: Bool = storage.restore(key: key1) else {
+            XCTFail("unable to restore default key1")
+            return
+        }
+
+        guard let userVal2: Int = storage.restore(key: key2) else {
+            XCTFail("unable to restore default key2")
+            return
+        }
+
+        XCTAssert(val1 != userVal1)
+        XCTAssert(val2 != userVal2)
+    }
+
 }

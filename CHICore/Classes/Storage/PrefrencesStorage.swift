@@ -29,6 +29,10 @@ public class PrefrencesStorage: PPrefrencesStorage {
     open func restore<T>(key: String) -> T? where T: PrefrenceStorable {
         return self.defaults?.object(forKey: key) as! T?
     }
+
+    open func registerDefaults(_ defaults: [String : PrefrenceStorable]) {
+        self.defaults?.register(defaults: defaults)
+    }
 }
 
 extension Int: PrefrenceStorable { }
