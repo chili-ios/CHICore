@@ -20,7 +20,7 @@ extension PKeyboardObservable where Self : UIViewController {
             object: nil,
             queue: OperationQueue.main
         ) { (notification) in
-            let value: NSValue = notification.userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue
+            let value: NSValue = notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
             let keyboardFrame: CGRect = value.cgRectValue
             handler(keyboardFrame)
         }
