@@ -16,18 +16,18 @@ public protocol PKeyboardObservable {
 extension PKeyboardObservable where Self : UIViewController {
     public func onKeyboardAppear(handler:@escaping ((CGRect) -> Void)) {
         _ = self.keyboardNotificationsObserver.addObserver(
-            forName: NSNotification.Name.UIKeyboardWillShow,
+            forName: UIResponder.keyboardWillShowNotification,
             object: nil,
             queue: OperationQueue.main
         ) { (notification) in
-            let value: NSValue = notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+            let value: NSValue = notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
             let keyboardFrame: CGRect = value.cgRectValue
             handler(keyboardFrame)
         }
     }
 
     public func onKeyboardDissappear(handler:@escaping () -> Void) {
-        let notificationName = NSNotification.Name.UIKeyboardWillHide
+        let notificationName = UIResponder.keyboardWillHideNotification
         _ = self.keyboardNotificationsObserver.addObserver(forName: notificationName, object: nil, queue: OperationQueue.main) { _ in
             handler()
         }

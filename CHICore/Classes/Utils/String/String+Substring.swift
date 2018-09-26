@@ -15,14 +15,14 @@ extension String {
 
     func substring(from: Int) -> String {
         let fromIndex = index(from: from)
-        return substring(from: fromIndex)
+        return String(self[fromIndex...])
     }
 
     func substring(with range: Range<Int>) -> String {
-        let safeRange = Range(uncheckedBounds: (lower: self.characters.count < range.lowerBound ? self.characters.count : range.lowerBound,
-                                                upper: self.characters.count < range.upperBound ? self.characters.count : range.upperBound))
+        let safeRange = Range(uncheckedBounds: (lower: self.count < range.lowerBound ? self.count : range.lowerBound,
+                                                upper: self.count < range.upperBound ? self.count : range.upperBound))
         let startIndex = index(from: safeRange.lowerBound)
         let endIndex = index(from: safeRange.upperBound)
-        return substring(with: startIndex..<endIndex)
+        return String(self[startIndex..<endIndex])
     }
 }

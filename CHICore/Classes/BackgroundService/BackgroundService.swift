@@ -23,12 +23,12 @@ public class BackgroundService: PBackgroundService {
     private func registerForEvents() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(BackgroundService.onAppBecomeActive),
-                                               name: NSNotification.Name.UIApplicationDidBecomeActive,
+                                               name: UIApplication.didBecomeActiveNotification,
                                                object: nil)
 
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(BackgroundService.onAppDidEnterBackground),
-                                               name:NSNotification.Name.UIApplicationDidEnterBackground,
+                                               name: UIApplication.didEnterBackgroundNotification,
                                                object: nil)
     }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'CHICore'
-s.version          = '0.2.1'
+s.version          = '0.3.0'
 s.summary          = 'CHICore is a set of helpers and services for a project in CHili studio.'
 
 s.ios.deployment_target = '8.0'
@@ -11,5 +11,6 @@ s.author           = { 'Chili' => 'studio@chi.lv' }
 s.source           = { :git => 'https://github.com/chili-ios/CHICore.git', :tag => s.version.to_s }
 
 s.source_files = 'CHICore/Classes/**/*.swift'
+s.swift_version = '4.2'
 
 end
