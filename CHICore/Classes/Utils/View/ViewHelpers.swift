@@ -15,7 +15,7 @@ extension UIView {
         }
     }
 
-    public static func viewFromXib<T: UIView>() -> T {
-        return UINib(nibName: String.className(T.self), bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! T
+    public static func viewFromXib<T: UIView>(_ aBundle: Bundle? = nil) -> T {
+        return UINib(nibName: String.className(T.self), bundle: aBundle).instantiate(withOwner: nil, options: nil)[0] as! T
     }
 }
