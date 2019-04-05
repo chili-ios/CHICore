@@ -13,4 +13,6 @@ s.source           = { :git => 'https://github.com/chili-ios/CHICore.git', :tag 
 s.source_files = 'CHICore/Classes/**/*.swift'
 s.swift_version = '4.2'
 
+s.dependency 'Device'
+
 end
