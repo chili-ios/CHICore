@@ -34,11 +34,11 @@ public struct DeviceUtils: PDeviceUtils {
     }
 
     public static var isPhone: Bool {
-        return UI_USER_INTERFACE_IDIOM() == .phone
+        return UIDevice.current.userInterfaceIdiom == .phone
     }
 
     public static var isPad: Bool {
-        return UI_USER_INTERFACE_IDIOM() == .pad
+        return UIDevice.current.userInterfaceIdiom == .pad
     }
 
     public static var isIPhoneX: Bool {
