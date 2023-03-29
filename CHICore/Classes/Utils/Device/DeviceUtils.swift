@@ -7,6 +7,7 @@
 
 import Foundation
 import Device
+import UIKit
 
 public protocol PDeviceUtils {
     static var isIPhone4: Bool { get }
